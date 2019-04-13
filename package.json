@@ -1,0 +1,32 @@
+{
+  "name": "mreact",
+  "version": "0.0.1",
+  "description": "mini react",
+  "source": "src/index.js",
+  "main": "dist/mreact.js",
+  "module": "dist/mreact.module.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alecmeng/mreact.git"
+  },
+  "keywords": [
+    "react",
+    "mreact"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alecmeng/mreact/issues"
+  },
+  "homepage": "https://github.com/alecmeng/mreact#readme"
+}
