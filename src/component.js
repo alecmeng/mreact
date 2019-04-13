@@ -8,8 +8,8 @@ export function Component(props, context) {
 Component.prototype = {
   setState(state, cb) {
     const s = Object.assign({}, this.state, state);
-    this.state = s;
-    
+    this.state = this._nextState = s;
+
     const newEl = getDomFromVNode(this.render());
     const parent = this._dom.parentNode;
     parent.replaceChild(newEl, this._dom);
@@ -18,5 +18,7 @@ Component.prototype = {
   },
   forceUpdate(cb) {
   },
-  render() {},
+  render() {
+    throw 'must implement render'
+  },
 };

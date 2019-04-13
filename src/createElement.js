@@ -1,6 +1,5 @@
 
 export function createElement(type, props, children) {
-  // console.log('---type---', type, props, children);
   if (props === null) props = {};
 	if (arguments.length>3) {
 		children = [children];
